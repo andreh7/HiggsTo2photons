@@ -18,6 +18,10 @@
 
 #add the packages in cmssw history
 # git cms-cvs-history import V00-00-09 CommonTools/RecoUtil
+
+# get_git V00-00-09 https://github.com/h2gglobe/CommonTools_RecoUtils.git CommonTools/RecoUtils
+cd $CMSSW_BASE/src ; mkdir CommonTools ; cd CommonTools ; git clone git@github.com:h2gglobe/CommonTools_RecoUtils.git RecoUtils ; cd RecoUtils ; git checkout V00-00-09
+
 # git cms-cvs-history import V09-00-00 RecoEgamma/EgammaTools
 cd $CMSSW_BASE/src ; mkdir RecoEgamma ; cd RecoEgamma ; git clone git@github.com:cms-cvs-history/RecoEgamma-EgammaTools.git EgammaTools ; cd EgammaTools ; git checkout  RecoEgamma-EgammaTools-V09-00-00
 
